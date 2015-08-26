@@ -1,0 +1,12 @@
+Math Test
+<ul>
+</ul>
+{% if item_list %}
+   <ul>
+   {% for item in item_list %}
+       <li> <a href="{% url 'testing:detail' item.id %}"> {{item.question}} </a>
+   {% endfor %}
+   </ul>
+{% else %}
+   <p> No items are available. </p>
+{% endif %}

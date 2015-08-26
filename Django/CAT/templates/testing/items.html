@@ -1,0 +1,10 @@
+Math Test
+<ul>
+</ul>
+{% if item %}
+   <ul>
+       <li> <a href="{% url 'testing:detail' item.id %}"> {{item.question}} </a>
+     </ul>
+{% else %}
+   <p> No items are available. </p>
+{% endif %}

@@ -1,0 +1,29 @@
+<h1>{{ item.question }}</h1>
+
+</ul>Your answer is:
+
+<ul>
+{% for choice in item.choice_set.all %}
+    {% if choice.votes > 0 %}
+        <li>{{ choice.choice_text }} </li>
+    {% endif %}
+{% endfor %}
+
+</ul>
+<a href="{% url 'polls:detail' poll.id %}">Vote again?</a>
+<ul>
+</ul>
+{% if poll.id > prev_poll.id %}
+    <a href="{% url 'polls:detail' prev_poll.id %}">Previous?</a>
+{% endif %}
+{% if poll.id < last_poll.id %}  
+   <a href="{% url 'polls:detail' next_poll.id %}">Next?</a>
+<ul>
+</ul>
+You have not finished yet!
+{% endif %}
+{% if poll.id == last_poll.id %}
+<ul>
+</ul>
+   <a href="{% url 'polls:final' %}">Submit the test?</a>
+{% endif %}

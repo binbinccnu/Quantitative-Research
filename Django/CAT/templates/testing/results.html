@@ -1,0 +1,26 @@
+<h1> {{item.question}}</h1>
+
+<ul>
+You have chosen:
+{% for choice in item.choice_set.all %}
+  {% if choice.votes > 0 %}
+  <li>{{ choice.choice_text }} </li>
+  {% endif %}
+{% endfor %}
+
+
+{% if item.id != next_item.id %}
+  <a href="{% url 'testing:detail' next_item.id %}">Next</a>
+<ul>
+</ul>
+You have not finished the test!
+{% endif %}
+
+</ul>
+{% if item.id == next_item.id %}
+  <a href="{% url 'testing:score' %}">Submit</a>
+{% endif %}
+
+<ul>
+</ul>
+Current theta: {{theta}}

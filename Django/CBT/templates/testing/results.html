@@ -1,0 +1,33 @@
+<h1> {{item.question}}</h1>
+
+<ul>
+You have chosen:
+{% for choice in item.choice_set.all %}
+  {% if choice.votes > 0 %}
+  <li>{{ choice.choice_text }} </li>
+  {% endif %}
+{% endfor %}
+
+</ul>
+<a href="{% url 'testing:detail' item.id %}">Revise</a>
+<ul>
+</ul>
+{% if item.id > prev_item.id %}
+  <a href="{% url 'testing:detail' prev_item.id %}">Previous</a>
+{% endif %}
+
+{% if item.id < last_item.id %}
+  <a href="{% url 'testing:detail' next_item.id %}">Next</a>
+<ul>
+</ul>
+You have not finished the test!
+{% endif %}
+
+</ul>
+{% if item.id == last_item.id %}
+  <a href="{% url 'testing:final' %}">Submit</a>
+{% endif %}
+
+<ul>
+</ul>
+   <a href="{% url 'testing:items' %}">Return to the front page?</a>
