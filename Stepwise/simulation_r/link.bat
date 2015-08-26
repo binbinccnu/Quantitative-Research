@@ -1,1 +1,0 @@
-STUIRT.exe link.stu link.stu.out
