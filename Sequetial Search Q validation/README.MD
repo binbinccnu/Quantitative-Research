@@ -6,4 +6,5 @@ The current folder employs knowledge discovery and data mining techniques to mod
 
 The R source codes include:
 
-1. 
+1. Main_Function_Simulation.R: Main function to simulate data
+2. 
