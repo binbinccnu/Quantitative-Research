@@ -4,7 +4,6 @@ Invented a stepwise method to detect parameter shift in test items, and compare 
  - [Mantel Haenszel Chi-square testing](https://en.wikipedia.org/wiki/Cochran–Mantel–Haenszel_statistics) method.
  
 Classification results are analyzed using [receiving operating characteristic (ROC)](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) curve.
-
 The most important Matlab source codes include:
 
 1. Main_Function.m:
