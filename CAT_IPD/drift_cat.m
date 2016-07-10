@@ -51,11 +51,10 @@ for replication=1:repli
      CAT_stratification_1;    %first administration
      CAT_stratification_2;    %second administration
     
-%    SIBTEST_;
+%    SIBTEST;
 %    ANALYZE_RESULTS;          %results for detection efficiency
     
  %% %now begin to calibrate flaged items using bayesian method
-    %index_cali=flag_sib_stra;
     flag_sib_stra=find(sample_size(1:36)>=1000);
     MEM;
 end
