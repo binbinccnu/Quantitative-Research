@@ -2,5 +2,8 @@ Online calibration for [Cognitive Diagnostic Model](http://webpages.uncc.edu/tba
 
 The Matlab source codes include:
 
-1. Online_Calibration_CDCAT.m: Main function to perform DINA model based computerized adaptive testing and 
+1. Online_Calibration_CDCAT.m:
+  - Main function to perform DINA model (a diagnostic classification model for binary observed responses and binary latent variables) based computerized adaptive testing
+  - Perform online calibration (calibrate model parameters on-the-fly as adaptive testing continues)
+
 2. 
