@@ -1,7 +1,7 @@
 Using stepwise method to detect parameter shift in test items.
 
 Three methods are: Stepwise TCC Method, Pearson’s d square Method, and Mantel Haenszel Chi-square testing method.
-
+Classification results are analyzed using receiving operating characteristic (ROC) curve
 The most important Matlab source codes include:
 
 1. Main_Function.m:
