@@ -19,4 +19,3 @@ else
     g_est = sum(response_select .* (1 - etas)) / sum(1 - etas);
     s_est = sum((1 - response_select) .* etas) / sum(etas);
 end
-
