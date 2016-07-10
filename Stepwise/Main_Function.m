@@ -1,6 +1,6 @@
 
 %% the goal of this study is to compare different methods in item parameter drift detection
-%  in paper-pencil based educational teting
+%  in paper-pencil based educational testing
 %  three methods are: Stepwise TCC Method, d square Method, and Mantel
 %  Haenszel method.
 
