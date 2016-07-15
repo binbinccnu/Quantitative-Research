@@ -12,7 +12,7 @@ The most important Matlab source codes include:
   - CAT_stratification_1.m 
   - CAT_stratification_2.m
 
-3. SIBTEST.m: A modified SIBTEST to detect parameter shift
+3. SIBTEST.m: A modified SIBTEST derived from Central Limit Theory to detect parameter shift
 
 4. MEM.m: Expectation-Maximization algorithm to estimate model parameters
 
