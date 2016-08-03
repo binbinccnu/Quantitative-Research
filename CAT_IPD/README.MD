@@ -1,4 +1,4 @@
-Invented a non-parametric hypothesis testing to detect parameter shift in computerized adaptive testing
+Invented a non-parametric hypothesis testing to detect parameter shift among groups in computerized adaptive testing with sparse response matrix
 
 The most important Matlab source codes include:
 
