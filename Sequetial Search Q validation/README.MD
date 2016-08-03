@@ -6,7 +6,7 @@ The current folder employs knowledge discovery and data mining techniques to mod
 
 The R source codes include:
 
-1. Main_Function_Simulation.R: Main function to simulate data
+1. Main_Function_Simulation.R: Main function to simulate data using reject sampling
 
 2. Main_Function_Estimation.R: Main function to estimate item parameters of DINA model, which is a diagnostic classification model for binary observed responses and binary latent variables.
   - Using Expectation-Maximization algorithm to estimate model parameters when both latent variables and model parameters are unknown
